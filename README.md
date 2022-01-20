@@ -9,6 +9,6 @@ Move project to m6g-metal machine so that it can run on 64-core-cpu with maximiz
 ##### 20220120
 Performance: 
 
-pointwise_threads: 2 row_block: 12 ht_transforms: 0 max_k: 128 max_nk: 16384 apf1: 1 bpf1: 1
-        84.38,4860.96,13.83 2.06,105.23,2.06 2.06,105.23,2.06  : 4959.17 5085.05 actual: 24.45,21.65,148.59 effective: 24.45,21.65,148.59 NEW BEST (5085.05)
-VGG 1.2 F(2x2,3x3): pointwise_threads: 2 row_block: 12 ht_transforms: 0 max_k: 128 max_nk: 16384 apf1: 1 bpf1: 1 ::: 5085.05
+pointwise_threads: 1 row_block: 12 ht_transforms: 0 max_k: 128 max_nk: 32768 apf1: 1 bpf1: 1
+        84.42,150.41,13.92 2.06,105.23,2.06 2.06,105.23,2.06  : 248.75 374.67 actual: 24.43,699.62,147.60 effective: 24.43,699.61,147.60 NEW BEST (374.67)
+VGG 1.2 F(2x2,3x3): pointwise_threads: 1 row_block: 12 ht_transforms: 0 max_k: 128 max_nk: 32768 apf1: 1 bpf1: 1 ::: 374.672
